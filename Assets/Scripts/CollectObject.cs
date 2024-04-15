@@ -17,17 +17,14 @@ public class CollectObject : MonoBehaviour
     {
         if (collision.CompareTag("PlayerCollider"))
         {
-<<<<<<< Updated upstream
             Collect();
             RespawnItem();
-=======
             gameObject.SetActive(false);
             transform.position = respawnPosition;
         }
         else
         {
             gameObject.SetActive(true);
->>>>>>> Stashed changes
         }
     }
 
